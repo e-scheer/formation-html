@@ -60,6 +60,23 @@ textarea{
   padding: make_em(10,15) make_em(15,15);
 }
 
+.input--avatar{
+  background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+  color:transparent;
+  /* make a square container */
+  width: 150px;
+  height: 150px;
+
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+
+  /* center the image vertically and horizontally */
+  background-position: top center;
+
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%;
+}
+
 .search__input{
   font-size: make_em(14,15);
   padding:make_em(10,14) make_em(20,14);

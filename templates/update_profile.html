@@ -70,37 +70,71 @@
     <section class="section wrapper--form wrapper--centered">
 			<div class="card card--form">
 				<div class="section--centered">
-					<h1 class="title--header">Inscription</h1>
+					<h1 class="title--header">Mettre à jour le profil</h1>
 				</div>
 
 				<div class="form__container">
 					<form>
+						<div class="form__line">
+							<div class="picture__container picture__container--detail">
+								<img class="author__picture author__picture--detail" src="https://www.bootdey.com/img/Content/avatar/avatar1.png" alt="Photo de Profil de ..." />
+							</div>
+
+							<div class="form__part form__part--full">
+								<input type="file" class="input--avatar" id="img" name="img" accept="image/*">			
+							</div>
+						</div>
+
+						<div class="form__line column column--spaced">
+							<div class="form__part form__part--half">
+								<label class="form__label" for="lastname">Nom</label>
+								<input type="text" class="input--classic input--text" placeholder="Axel" id="lastname" name="lastname" required/>
+							</div>
+
+							<div class="form__part form__part--half">
+								<label class="form__label" for="firstname">Prénom</label>
+								<input type="text" class="input--classic input--text" placeholder="Cardinaels" id="firstname" name="firstname" required/>
+							</div>
+						</div>
 
 						<div class="form__line">
 							<div class="form__part form__part--full">
-								<label class="form__label" for="title">Email</label>
-								<input type="email" class="input--classic input--text" placeholder="Quel est votre email" id="email" name="email" required/>
+								<label class="form__label" for="email">Email</label>
+								<input type="email" class="input--classic input--text" placeholder="cardinaels@example.com" id="email" name="email" required/>
+							</div>
+						</div>
+
+						<div class="form__line">
+							<div class="form__part form__part--full">
+								<label class="form__label" for="birthdate">Date de naissance</label>
+								<input type="date" class="input--classic input--text" id="birthdate" name="birthdate" required/>
+							</div>
+						</div>
+
+						<div class="form__line">
+							<div class="form__part form__part--full">
+								<label class="form__label" for="phone">Téléphone</label>
+								<input type="tel" class="input--classic input--text" placeholder="+32 498 12 12 91" id="phone" name="phone" required/>
 							</div>
 						</div>
 
 						<div class="form__line column column--spaced">
 							<div class="form__part form__part--half">
 								<label class="form__label" for="pwd">Mot de passe</label>
-								<input type="password" class="input--classic input--text" placeholder="Quel sera votre mot de passe" id="pwd" name="pwd" required/>
+								<input type="password" class="input--classic input--text" placeholder="Votre mot de passe" id="pwd" name="pwd" required/>
 							</div>
 
 							<div class="form__part form__part--half">
-								<label class="form__label" for="pwd_confirm">Confirmation</label>
-								<input type="password" class="input--classic input--text" placeholder="Confirmation du mot de passe" id="pwd_confirm" name="pwd_confirm" required/>
+								<label class="form__label" for="new_pwd">Confirmation</label>
+								<input type="password" class="input--classic input--text" placeholder="Nouveau mot de passe" id="new_pwd" name="new_pwd" required/>
 							</div>
 						</div>
 
 
 						<div class="form__submit">
-							<input  type="submit" class="btn btn--primary btn--full" value="Créer mon compte" />
+							<input  type="submit" class="btn btn--primary btn--full" value="Mettre à jour le profil" />
 						</div>
 					</form>
-				</div>
 			</div>
     </section>
 	</main>

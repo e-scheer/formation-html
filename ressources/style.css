@@ -969,13 +969,13 @@ ul.slick-dots li button {
 }
 .slick-slider .slick-next:before {
   content: "";
-  background: url(98de41c48072d5c3665d553ef441f045.svg) no-repeat center center;
+  background: url(067395031dc6840de28e58df02424b84.svg) no-repeat center center;
   background-size: contain;
   -webkit-background-size: contain;
 }
 .slick-slider .slick-prev:before {
   content: "";
-  background: url(98de41c48072d5c3665d553ef441f045.svg) no-repeat center center;
+  background: url(067395031dc6840de28e58df02424b84.svg) no-repeat center center;
   background-size: contain;
   -webkit-background-size: contain;
 }
@@ -1087,7 +1087,7 @@ textarea {
 
 select {
   position: relative;
-  background: url(98de41c48072d5c3665d553ef441f045.svg) no-repeat 97.5% center rgba(255, 255, 255, 0.1);
+  background: url(067395031dc6840de28e58df02424b84.svg) no-repeat 97.5% center rgba(255, 255, 255, 0.1);
 }
 
 textarea {
@@ -1098,6 +1098,20 @@ textarea {
   border: 1px solid #DEDEDE;
   border-radius: 9px;
   padding: 0.6666666667em 1em;
+}
+
+.input--avatar {
+  background-image: url("http://i.stack.imgur.com/Dj7eP.jpg");
+  color: transparent;
+  /* make a square container */
+  width: 150px;
+  height: 150px;
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+  /* center the image vertically and horizontally */
+  background-position: top center;
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%;
 }
 
 .search__input {
