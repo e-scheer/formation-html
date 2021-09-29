@@ -60,21 +60,29 @@ textarea{
   padding: make_em(10,15) make_em(15,15);
 }
 
-.input--avatar{
-  background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
-  color:transparent;
-  /* make a square container */
+.input--avatar {
+  position: relative;
+}
+
+.input--avatar input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  display: inline;
+}
+
+.avatar--holder {
+  position: relative;
+  border-radius: 50%;
   width: 150px;
   height: 150px;
+}
 
-  /* fill the container, preserving aspect ratio, and cropping to fit */
-  background-size: cover;
-
-  /* center the image vertically and horizontally */
-  background-position: top center;
-
-  /* round the edges to a circle with border radius 1/2 container size */
-  border-radius: 50%;
+.avatar--icon {
+  position: absolute;
+  top: 110px;
+  left: 55px;
 }
 
 .search__input{
